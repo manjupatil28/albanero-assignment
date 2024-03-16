@@ -5,16 +5,16 @@
 //Solution
 
 function canSegmentString(s, wordArray) {
-    const dp = new Array(s.length + 1).fill(false);
-    dp[0] = true;
+    const arr = new Array(s.length + 1).fill(false);
+    arr[0] = true;
     
     for (let i = 1; i <= s.length; i++) {
         for (let j = 0; j < i; j++) {
-            if (dp[j] && wordArray.includes(s.substring(j, i))) {
-                dp[i] = true;
+            if (arr[j] && wordArray.includes(s.substring(j, i))) {
+                arr[i] = true;
                 break;
             }
         }
     }
-    return dp[s.length];
+    return arr[s.length];
 }
