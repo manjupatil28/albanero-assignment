@@ -10,7 +10,6 @@ function reverseNumberAndCheckPrimeFactors(x) {
    return 'No';
   }
 
-  // Reverse the digits of x.
   let reversed = 0;
   let num = x;
   while (num > 0) {
@@ -18,7 +17,6 @@ function reverseNumberAndCheckPrimeFactors(x) {
     num = Math.floor(num / 10);
   }
 
-  // Check if the reversed number has any prime factors.
   function isPrime(num) {
     if (num < 2)
     {
