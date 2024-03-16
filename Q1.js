@@ -7,7 +7,7 @@
 
 function reverseNumberAndCheckPrimeFactors(x) {
   if (x <= 0) {
-   Return 'No';
+   return 'No';
   }
 
   // Reverse the digits of x.
@@ -42,7 +42,7 @@ function reverseNumberAndCheckPrimeFactors(x) {
 
   // Return the result
   if (factors.length > 0) {
-    return `Yes${factors.join('- ')}`;
+    return `Yes - [${factors}]`;
   } else {
     return 'No';
   }
